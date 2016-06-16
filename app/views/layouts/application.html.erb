@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>NAOMI POLLOCK</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+        <h1><%= link_to 'NAOMI POLLOCK', root_path %></h1>
+      <ul>
+        <li><%= link_to 'Books', books_path %></li>
+        <li><%= link_to 'About', about_path %></li>
+        <li><%= link_to 'Photographs', photographs_path %></li>
+      </ul>
+    </div>
+  </header>
+  <hr />
+<div class="container"><%= yield %></div>
+
+
+</body>
+</html>
